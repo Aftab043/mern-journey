@@ -1,0 +1,35 @@
+/* 1st Question
+div{
+    height: 150px;
+    width: 300px;
+    background-color: grey;
+    border: 5px dotted black;
+    margin: 20px 1em 40px 1em;
+    padding: 1em;
+} */
+
+ /* 2nd Question
+.box1 , .box2 , .box3{
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: inline-block;
+} */
+
+li{
+    display: inline-block;
+    background-color: #ff000023;
+
+}
+div{
+    height: 200px;
+    width: 200px;
+    background-color: rgba(0 , 254 , 123 , 0.5);
+}
+
+#opacity{
+    background-color: red;
+    opacity: 0;
+}

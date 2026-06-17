@@ -1,0 +1,31 @@
+*{
+    font-family: sans-serif;
+    margin: 1px;
+}
+.head{
+    height: 40px;
+    width: 100%;
+    border: 2px solid black;
+    background: linear-gradient(135deg, rgba(52, 157, 56, 0.5), rgba(34, 12, 33, 0.9));
+    text-align: center;
+    font-size: 30px;
+ }  
+ .main{
+    height: 625px;
+    width: 100%;
+    border: 2px solid black;
+    background: linear-gradient(135deg, rgba(156, 170, 51, 0.5), rgba(34, 12, 33, 0.9));
+    text-align: center;
+    font-size: 30px;
+ }
+ .footer{
+    height: 40px;
+    width: 100%;
+    border: 2px solid rgb(196, 19, 19);
+    background: linear-gradient(135deg, rgba(51, 39, 115, 0.5), rgba(34, 12, 33, 0.9));
+    text-align: center;
+    font-size: 30px;
+ }
+ .head, .main, .footer{
+    color: white;
+ }

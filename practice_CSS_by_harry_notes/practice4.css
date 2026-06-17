@@ -1,0 +1,67 @@
+.container{
+    margin: 0;
+    padding: 0;
+    /* border: 2px solid black;  */
+    height: 100%;
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+    font-family: sans-serif;
+       
+}
+
+.nav{
+    height: 10vh;
+    width: 100%;
+    border: 2px solid black;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+
+}
+ul{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.left{
+    height: 79vh;
+    width: 50%;
+    border: 2px solid red;
+    background-color: red;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+}
+
+.right{
+    height: 79vh;
+    width: 50%;
+    border: 2px solid green;
+    background-color: green;
+    /* display: none; */
+    font-size: 24px;
+    text-align: center;
+    color: yellow;
+}
+.box{
+    display: flex;
+}
+.footer{
+    height: 10vh;
+    width: 100%;
+    border: 2px solid darkslategray;
+    background-color: darkslategray;
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+}

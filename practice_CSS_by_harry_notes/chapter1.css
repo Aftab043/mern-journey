@@ -1,0 +1,15 @@
+#head{
+    background-color: grey;
+}
+
+div{
+    height: 100px;
+    width: 100px;
+    color: white;
+    background-color: red;
+}
+
+.he{
+    color: black;
+    background-color: bisque;
+}

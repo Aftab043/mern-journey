@@ -1,0 +1,44 @@
+.container{
+    width: 100%;
+    background-color: purple;
+    position: sticky;
+    top: 15px;
+}
+
+ul{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+li{
+    list-style: none;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ 
+@media(max-width: 768px) {
+    ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+.box{
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+}
+.i{
+    background-color: palegoldenrod;    
+    position: relative;
+
+}
+.n{   
+    background-color: purple;
+    position: relative;
+
+}

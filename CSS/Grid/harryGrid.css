@@ -1,0 +1,36 @@
+.container{
+    border: 2px solid black;
+    display: grid;
+    width: 80vw;
+    text-align: center;
+    /* grid-template-areas: "nav nav nav"
+                         "side article article"
+                         "main main main"
+                         "footer footer footer";
+     */
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.item{
+    border: 2px solid white;
+    height: 55px;
+}   
+/* .one{
+    grid-area: nav;
+    background-color: aqua;
+}
+.two{
+    grid-area: side;
+    background-color: palevioletred;
+}
+.three{
+    grid-area: article;
+    background-color: lawngreen;
+}
+.four{
+    grid-area: main;
+    background-color: rebeccapurple;
+}
+.five{
+    grid-area: footer;
+    background-color: aquamarine;
+} */

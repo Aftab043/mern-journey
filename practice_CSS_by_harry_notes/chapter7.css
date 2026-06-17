@@ -1,0 +1,55 @@
+.container{
+    height: 80px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    align-items: center;
+    grid-gap: 5px;
+    border: 2px solid black;
+    color: white;
+    background-color: black;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+}
+
+.profile{
+    text-align: center;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+ 
+ul{
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    
+}
+
+li{
+    list-style: none;   
+     
+}
+
+a{
+    text-decoration: none;   
+    color: white;
+}
+
+.button{
+    font-size: 15px;
+    padding: 10px 25px;
+    border-radius: 8px;
+}
+
+.logo{
+    font-size: 40px;
+    font-weight: bold;
+}

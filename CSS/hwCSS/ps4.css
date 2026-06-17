@@ -1,0 +1,36 @@
+body{
+    text-align: center;
+}
+
+p{
+    color: #A52A2A;
+    line-height: 30px;
+}
+
+h1{
+    text-decoration: underline;
+    color: red;
+    font: georgia;
+}
+
+h3{
+    color: black;
+}
+
+a{
+    color: green;
+    text-decoration: none;
+}
+
+button{
+    background-color: white;
+    color: blueviolet;
+}
+
+textarea{
+    color: #000000;
+}
+span{
+    color: blue;
+    text-decoration: aquamarine underline;
+}

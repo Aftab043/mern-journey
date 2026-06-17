@@ -1,0 +1,16 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    text-align: center;
+    border: 3px solid black;
+    margin: 28px;
+    display: inline-block;
+}
+#static{
+    background-color: yellow;
+    position: static;
+    top: 200px;
+    left: 200px;
+
+}

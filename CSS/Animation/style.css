@@ -1,0 +1,51 @@
+.box{
+    height: 100px;
+    width: 300px;
+    background-color: pink;
+    animation-name: colAnimate;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    transition-delay: 0;
+    animation-iteration-count: infinite;     
+    animation-direction: alternate;
+}
+
+@keyframes colAnimate{
+    0%{
+        background-color: green;
+    }
+    50%{
+        background-color: yellow;
+    }
+    80%{
+        background-color: red;
+    }
+    100%{
+        background-color: blue;
+    }
+}
+
+@keyframes divAnimate{
+    from{width : 10px;
+    background-color: green;
+}
+    to{ width: 400px;
+    background-color: blue;
+border-radius: 50%;    }
+}
+
+@keyframes fontAnimation{
+    from {
+        font-size: 20px;
+    } to {
+        font-size: 40px;
+    }
+}
+
+@keyframes colorAnimate{
+    from{
+        background-color: green;
+     } to{
+        background-color: blue;
+     }
+}

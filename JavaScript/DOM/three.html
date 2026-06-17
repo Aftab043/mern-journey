@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: white;">
+    <ul class="language"> 
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName){
+        const list = document.createElement('li');
+        list.innerHTML = `${langName}`;
+        document.querySelector('.language').appendChild(list)
+    }
+addLanguage('<b>Python</b>');
+addLanguage('flask');
+addLanguage('DjanGo');
+addLanguage('<img src="xyz" onerror="alert("Hacked 😈")">');
+
+    function addOptiLanguage(langName){
+        const list = document.createElement('li');
+        list.appendChild(document.createTextNode(langName));
+        document.querySelector('.language').appendChild(list);
+    }
+addOptiLanguage('CSS');
+addOptiLanguage('NodeJs');
+addOptiLanguage('<b>Python</b>');
+addOptiLanguage('<img src="xyz" onerror="alert("Hacked 😈")">');
+
+// Edit
+
+const secondLang = document.querySelector('li:nth-child(2)');
+// secondLang.innerHTML = "mongo";
+const newli = document.createElement('li');
+newli.textContent = 'mojo';
+secondLang.replaceWith(newli);
+
+// Edit
+const firstLang = document.querySelector('li:first-child');
+firstLang.outerHTML = '<li>TypeScript</li>';
+
+// remove
+const lastLang = document.querySelector('li:last-child');
+lastLang.remove();
+</script>
+</html>

@@ -1,0 +1,60 @@
+/* universal selector */
+*{
+    font-family: "courier New"; 
+}
+/* Element selector */
+h1 , h3 {
+    color: #b92b27;
+}
+/* id selector */
+#login {
+    background-color: white;
+}
+
+#signup{
+    background-color: red;
+} 
+#myid{
+    color: green;
+}
+/* class selector */
+.u{
+    background-color: green;
+    color : aquamarine;
+}
+
+div[id="myid"] p {
+    color: yellow;
+}
+
+.post a {
+    color: green;
+    background-color: wheat;
+}
+
+nav ul li a {
+           color: hotpink;
+}
+/* sibling combinator */
+p + h3{
+    text-decoration: underline;
+}
+
+.u + button{
+    background-color: blue;
+    color: yellowgreen;
+}
+/* child combinator */
+ div > input{
+    background-color: violet;
+ }
+/* attribute selector */
+ input[type="text"]{
+    color: red;
+ }
+ input[type="password"]{
+    color: green;
+ }
+ input[type]{
+    background-color: goldenrod;
+ }
