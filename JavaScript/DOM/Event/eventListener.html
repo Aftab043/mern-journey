@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Click Me 1</button>
+    <button>Click Me 2</button>
+    <button>Click Me 3</button> 
+    <button>Click Me 4</button>
+</body>
+<script>
+    let btns = document.querySelectorAll("button");
+    for(let btn of btns){
+        // btn.addEventListener("click", sayHello);
+        // btn.addEventListener("click", sayName);
+        btn.addEventListener("dblclick", sayHi); 
+
+    }
+    function sayHello(){
+        alert("hello");
+    }
+    function sayName(){
+        alert("Aftab");
+    }
+    function sayHi(){
+        alert("you double click me");
+    }
+</script>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Clicke Me1</button>
+    <button>Clicke Me2</button>
+    <button>Clicke Me3</button>
+    <button>Clicke Me4</button>
+    <button>Clicke Me5</button>
+</body>
+<script>
+    let btns = document.querySelectorAll("button");
+    for (let btn of btns) {
+        btn.onmouseenter = function() {
+            console.log("you entered button");  
+        };
+    }
+    for (let btn of btns) {
+        btn.onclick = function () {
+            console.log("you clicked");
+        };
+    }
+    
+    
+</script>
+</html>
