@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input placeholder="move your character">
+
+</body>
+<script>
+    let inp = document.querySelector("input");
+    inp.addEventListener("keydown", function(event){
+        console.log("code = ",event.code); //ArrowUp(W) , ArrowDown(S) , ArrowLeft(A) , ArrowRight(D)
+        if(event.code == "keyW"){
+            console.log("charactor moves up");
+        } else if(event.code == "keyS"){
+            console.log("charactor moves down");
+        } else if(event.code == "keyA"){
+            console.log("charactor moves left");
+        } else if(event.code == "keyD"){
+            console.log("charactor moves right");
+        }
+
+    } )
+</script>
+</html>

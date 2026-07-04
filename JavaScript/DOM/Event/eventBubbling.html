@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styleBubbling.css">
+</head>
+<body style="background-color: rgb(56,46,46);">
+    <div>
+        <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
+    </div>
+
+</body>
+<script>
+    // Select parent and child elements for event handling.
+    let div = document.querySelector("div");
+    let ul = document.querySelector("ul");
+    let lis = document.querySelectorAll("li");
+
+    div.addEventListener("click", function(event) {
+        console.log("div was clicked");
+        // Stops the click event from bubbling further upward.
+        event.stopPropagation();
+    });
+
+    ul.addEventListener("click", (event) => {
+        // Without this, clicking ul/li can also trigger the div listener.
+        event.stopPropagation();
+        console.log("ul was clicked");
+    });
+
+    // Add a click listener to each li element.
+    for(let li of lis){
+        li.addEventListener("click", function(event) {
+            console.log("li was clicked");
+            // Stops li click from reaching ul and div.
+            event.stopPropagation();
+    });
+    }
+</script>
+</html>

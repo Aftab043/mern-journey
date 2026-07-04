@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p>this ia a paragraph.</p>  -->
+    <div class="box" style="height: 100px; width: 100px; background-color: pink; border: 1px solid black;"></div>
+    <br> 
+    <h1>Use of this in eventListener's</h1>
+    <h3>let's demo it on elements</h3>
+    <p>This is a sample paragraph.</p>
+    <button>Click Me!</button>
+</body>
+<script>
+    let h1 = document.querySelector("h1");
+    let h3 = document.querySelector("h3");
+    let p = document.querySelector("p");
+    let btn = document.querySelector("button");
+
+    function changeColor() {
+        console.log(this.innerText);
+        this.style.backgroundColor = "red";
+    }
+
+    
+    h1.addEventListener("click", changeColor)
+    
+    h3.addEventListener("click", changeColor)
+    
+    p.addEventListener("click", changeColor)
+    
+    btn.addEventListener("click", changeColor)
+
+
+    // let p = document.querySelector("p");
+    // p.addEventListener("click", function() {
+    //     console.log("paragrapgh was clicked");
+    // })
+    
+    // let box = document.querySelector(".box");
+    // box.addEventListener("mouseenter", function() {
+    //     // console.log("mouse inside box");
+    //     alert("mouse inside box");
+    // } )
+
+    // let btn = document.querySelector("button");
+    // btn.addEventListener("click", function() {
+    //     console.log(this.innerText);
+    //     this.style.backgroundColor = "red";
+    //     // alert(this);
+    // })
+</script>
+</html>
