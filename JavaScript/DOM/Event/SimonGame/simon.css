@@ -16,16 +16,36 @@ h2 {
     font-size: 1.4rem;
 }
 
-/* Rules button */
+/* Action buttons */
+.start-btn,
 .rules-btn {
     padding: 10px 20px;
     border: none;
     border-radius: 10px;
-    background: #3B82F6;
     color: white;
     font-size: 16px;
     cursor: pointer;
     transition: 0.2s;
+    margin: 0 6px;
+}
+
+.start-btn {
+    background: #22C55E;
+}
+
+.rules-btn {
+    background: #3B82F6;
+}
+
+.start-btn:hover {
+    background: #16A34A;
+    transform: translateY(-3px);
+}
+
+.start-btn:disabled {
+    background: #64748B;
+    cursor: not-allowed;
+    transform: none;
 }
 
 .rules-btn:hover {
@@ -179,7 +199,7 @@ h2 {
 
 /* Red screen flash for wrong answer */
 .game-over {
-    background-color: #ff0000;
+    background: #ff0000;
 }
 
 /* White flash for selected button */

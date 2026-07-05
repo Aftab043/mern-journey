@@ -14,19 +14,22 @@ let started = false;
 let level = 0;
 
 let h2 = document.getElementById("level-title");
+let startBtn = document.querySelector(".start-btn");
 let btns = ["red", "green", "blue", "yellow"];
 
-// Start the game when any key is pressed or touch.
+// Start the game when Start button or any key is pressed.
 function startGame() {
     if (!started) {
         started = true;
+        startBtn.innerText = "Playing";
+        startBtn.disabled = true;
         levelUp();
         console.log("Game Started");
     }
 }
 
-document.addEventListener("keypress", startGame);
-document.addEventListener("click", startGame);
+document.addEventListener("keydown", startGame);
+startBtn.addEventListener("click", startGame);
 
 // Add a new random color and show the full sequence.
 function levelUp() {
@@ -115,9 +118,12 @@ function checkAns(idx) {
         if (level - 1 > highScore) {
             highScore = level - 1;
         }
+        console.log("Level:", level);
+        console.log("High Score:", highScore);
 
-        h2.innerText = `Game Over! Your score was: ${level - 1} and high score is: ${highScore}. Press any key to restart.`;
-
+        // h2.innerText = `Game Over! Your score was: ${level - 1} and high score is: ${highScore}. Press any key to restart.`;
+        h2.innerText = `Game Over! Your Score: ${level - 1} | High Score: ${highScore}. Press Start or any key to restart.`;
+        
         reset();
         console.log("Game Over");
     }
@@ -129,6 +135,8 @@ function reset() {
     gameSeq = [];
     userSeq = [];
     level = 0;
+    startBtn.innerText = "Start";
+    startBtn.disabled = false;
 }
 
 let ruleBtn = document.querySelector(".rules-btn");
