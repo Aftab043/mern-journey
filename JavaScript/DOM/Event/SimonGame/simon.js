@@ -16,14 +16,17 @@ let level = 0;
 let h2 = document.getElementById("level-title");
 let btns = ["red", "green", "blue", "yellow"];
 
-// Start the game when any key is pressed.
-document.addEventListener("keypress", function () {
+// Start the game when any key is pressed or touch.
+function startGame() {
     if (!started) {
         started = true;
         levelUp();
         console.log("Game Started");
     }
-});
+}
+
+document.addEventListener("keypress", startGame);
+document.addEventListener("click", startGame);
 
 // Add a new random color and show the full sequence.
 function levelUp() {
