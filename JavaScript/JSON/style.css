@@ -1,0 +1,15 @@
+* {
+    background-color: rgb(62, 27, 27);
+}
+h1 {
+    color: aliceblue;
+} 
+button{
+    border: 2px solid rgb(134, 120, 120);
+    color: white;
+    border-radius: 15px;
+    background-color: black;
+}
+#result{
+    color: white;
+}
